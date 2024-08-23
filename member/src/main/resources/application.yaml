@@ -1,2 +1,7 @@
 server:
   port: 8001  #默认8080
+  servlet:
+    context-path: /member
+spring:
+  banner:
+    location: classpath:banner/banner.txt
