@@ -1,4 +1,4 @@
-package com.jiawa.train.member.aspect;
+package com.jiawa.train.common.aspect;
 
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.support.spring.PropertyPreFilters;
@@ -87,7 +87,7 @@ public class LogAspect {
     public Object doAround(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         long startTime = System.currentTimeMillis();
         Object result = proceedingJoinPoint.proceed();
-        // 排除字段，敏感字段或太长的字段不显示：身份证、手机号、邮箱、密码等
+        // 排除字段，敏感字段或太长的字段不 显示：身份证、手机号、邮箱、密码等
         String[] excludeProperties = {};
         PropertyPreFilters filters = new PropertyPreFilters();
         PropertyPreFilters.MySimplePropertyPreFilter excludefilter = filters.addFilter();

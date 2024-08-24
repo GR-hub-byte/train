@@ -14,7 +14,7 @@ import org.springframework.core.env.Environment;
  * @since 2024年 月 日
  */
 @SpringBootApplication
-@ComponentScan("com.jiawa.train.member")
+@ComponentScan("com.jiawa.train")
 @EnableAspectJAutoProxy
 @Slf4j
 public class MemberApplication {
