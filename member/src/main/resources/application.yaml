@@ -3,5 +3,7 @@ server:
   servlet:
     context-path: /member
 spring:
+  application:
+    name: member-service
   banner:
     location: classpath:banner/banner.txt
